@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./public/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/contactUs.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="./public/script.js"></script>
+    
+    <section class="home" id="home">
+        
+      <!-- ------Hamburger--for --mobile view------ -->
+       
+      <nav class="hamburger">
+        <input type="checkbox" id="check" />
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+    </nav>
+
+        <nav id="globalMenu">
+            <div class="logo"> 
+                <h1>SK <span>Dines</span></h1>
+            </div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                    <li><a href="./veg.html">Veg</a></li>
+                    <li><a href="./non_veg.html">Non-Veg</a></li>
+                    <li><a href="./iceCream.html">IceCream</a></li>
+                    <li><a href="./milkshakes.html">Milkshakes</a></li>
+                    <li><a href="./juices.html">Juices</a></li>
+                    <li><a href="./cakes.html">Cakes</a></li>
+                    <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="contanier">
+                <div class="info">
+                    <div class="infoBox">
+                        <i class="fa fa-address-card"></i>
+                        <h2>Location</h2>
+                        <h5>NGM,college opposite</h5>
+                        <h5>palakkad road pollachi-642001</h5>
+                    </div>
+                    <div class="infoBox">
+                        <i class="fa fa-envelope"></i>
+                        <h2>Email</h2>
+                        <h5>sathishhh2003@gmail.com</h5>
+                    </div>
+                    <div class="infoBox">
+                        <i class="fa fa-mobile"></i>
+                        <h2>Contact No</h2>
+                        <h5>+91 9789291726</h5>
+                    </div>
+                </div>
+                <div class="infoInput">
+
+                    <input type="text" name="name" id="name" placeholder="Name" required />
+                    <br>                     
+                    <input type="text" name="mobileNo" id="mobile" placeholder="Mobile No" required />
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <br>
+                    <textarea name="yourMind" rows="10" placeholder="Your Mind" cols="40"></textarea>
+                    <br>
+                    <button id="button" onclick="btnclicked()" type="submit">Send</button>
+                </div>
+            </div>
+            
+   </main>
+   <div class="footer">
+    <h4>copyright <i class="fa fa-copyright"></i><span class="ncolor">SK Dines.</span> | All rights reserved. </h4>
+</div>
+    <script>
+        
+        function hamburger(){
+            const globalMenu = document.getElementById('globalMenu');
+            const btn = document.getElementById('btn');
+            const cancel = document.getElementById('cancel');
+            const check = document.getElementById('check');
+    
+                btn.addEventListener('click',()=>{
+                    btn.style.display = 'none';
+                    cancel.style.display = 'block';
+                    globalMenu.style.display = 'block';
+                });
+                cancel.addEventListener('click',()=>{
+                     cancel.style.display = 'none';
+                    btn.style.display = 'block';
+                    globalMenu.style.display = 'none';
+                });
+        }
+
+window.addEventListener("scroll",()=>{
+    if(globalMenu.style.display === "block"){
+        globalMenu.style.display = "none";
+        btn.style.display = "block";
+        cancel.style.display = "none";
+    }
+});
+
+        hamburger();
+
+        const name = document.getElementById('name');
+        const mobile = document.getElementById('mobile');
+        const email = document.getElementById('email');
+        
+        function btnclicked() {
+            
+            
+    if(name.value === ""){
+        name.style.border = "2px solid red";
+    }
+    else if(mobile.value === ""){
+        mobile.style.border = "2px solid red";
+    }
+    else if(email.value === ""){
+        email.style.border = "2px solid red";
+    }
+    else{
+    window.location.href = 'index.html';
+    }
+
+    if(name.value !== ""){
+        name.style.border = "none";
+    }
+    if(mobile.value !== ""){
+        mobile.style.border = "none";
+    }
+    if(email.value !== ""){
+        email.style.border = "none";
+    }
+    
+        }
+     
+        </script>
+</body>     
+</html>

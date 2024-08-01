@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juices</title>
+    <link rel="stylesheet" href="./public//style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./public/juice_BackGround.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header h1{
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- cart section -->
+     <script defer src="./public/script.js"></script>
+    
+    <section class="food">
+        <header>
+                        <!-- ------Hamburger--for --mobile view------ -->
+
+                        <nav class="hamburger">
+                            <input type="checkbox" id="check" />
+                            <label for="check">
+                                <i class="fa fa-bars" id="btn"></i>
+                                <i class="fa fa-times" id="cancel"></i>
+                            </label>
+                        </nav>
+            
+
+            <h1>Juices</h1>
+   
+            <nav id="globalMenu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./veg.html">Veg</a></li>
+                    <li><a href="./non_veg.html">Non-Veg</a></li>
+                    <li><a href="./iceCream.html">IceCream</a></li>
+                    <li><a href="./milkshakes.html">Milkshakes</a></li>
+                    <li><a href="#">Juices</a></li>
+                    <li><a href="./cakes.html">Cakes</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <button class="btn-cart" id="cart-icon">Cart<i class="fa fa-shopping-cart"></i></button>
+                    <div class="cart-count">0</div>
+                    </ul>
+            </nav>
+            <!-- ************cartSection************ -->
+
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+
+
+
+
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+        </header>
+        <div class="container">
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/roseMilk.jpg" loading="lazy">
+                <h2 class="food-title">rose Milk</h2>
+                <h3 class="food-price">Rs.50</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+                <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/Green_apple juice.jpg" loading="lazy">
+                <h2 class="food-title">Green_apple</h2>
+                <h3 class="food-price">Rs.70</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/apple-juice.jpg" loading="lazy">
+                <h2 class="food-title">apple</h2>
+                <h3 class="food-price">Rs.60</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+           
+            </div>
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/grape_juice.jpg" loading="lazy">
+            <h2 class="food-title">grap</h2>
+            <h3 class="food-price">Rs.65</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/orange_juice.jpg" loading="lazy">
+            <h2 class="food-title">orange</h2>
+            <h3 class="food-price">Rs.70</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/gooseBerry_juice.jpg" loading="lazy">
+            <h2 class="food-title">gooseberry</h2>
+            <h3 class="food-price">Rs.55</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/banana_juice.jpg" loading="lazy">
+            <h2 class="food-title">banana</h2>
+            <h3 class="food-price">Rs.70</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/waterMelon_juice.jpg" loading="lazy">
+            <h2 class="food-title">waterMelon</h2>
+            <h3 class="food-price">Rs.60</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/pineApple_juice.jpg" loading="lazy">
+            <h2 class="food-title">pineApple</h2>
+            <h3 class="food-price">Rs.85</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/dragon_fruit_juice.jpg" loading="lazy">
+            <h2 class="food-title">dragonfruit</h2>
+            <h3 class="food-price">Rs.95</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/mango_juice.jpg" loading="lazy">
+            <h2 class="food-title">mango</h2>
+            <h3 class="food-price">Rs.75</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/carrot_juice.jpg" loading="lazy">
+            <h2 class="food-title">carrot</h2>
+            <h3 class="food-price">Rs.60</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/tomoto_juice.jpg" loading="lazy">
+            <h2 class="food-title">tomoto</h2>
+            <h3 class="food-price">Rs.55</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/kiwi_juice.jpg" loading="lazy">
+            <h2 class="food-title">kiwi</h2>
+            <h3 class="food-price">Rs.70</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/coconut_juice.jpg" loading="lazy">
+            <h2 class="food-title">coconut</h2>
+            <h3 class="food-price">Rs.60</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        </div>
+    </section>
+    <!-- cart section -->
+    <script src="../controller/script.js"></script>
+    
+</body>
+</html>

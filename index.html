@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/public/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .home{
+            min-height:100vh;
+            background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/public/1401021.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="./public/script.js"></script>
+
+    <section class="home" id="home">
+
+      <!-- ------Hamburger--for --mobile view------ -->
+       
+      <nav class="hamburger">
+        <input type="checkbox" id="check" />
+        <label for="check">
+            <i class="fa fa-bars" id="btn"></i>
+            <i class="fa fa-times" id="cancel"></i>
+        </label>
+    </nav>
+
+        <nav id="globalMenu">
+            <div class="logo"> 
+                <h1>SK <span>Dines</span></h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./veg.html">Veg</a></li>
+                <li><a href="./non_veg.html">Non-Veg</a></li>
+                <li><a href="./iceCream.html">IceCream</a></li>
+                <li><a href="./milkshakes.html">Milkshakes</a></li>
+                <li><a href="./juices.html">Juices</a></li>
+                <li><a href="./cakes.html">Cakes</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="outer">
+        <div class="banner">
+            <h2>Welcome to <span>SK Dines</span></h2>
+            <h3>Delivaring delicious food in the city</h3>
+            <h1 id="todayspecial">Today's special</h1>
+        </div>
+        </div>
+        <div class="special">
+           
+            <div class="special-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/chicken-wings-fried-food-food-cuisine-wallpaper-preview.jpg" >
+                <h2>Chicken Wings</h2>
+                <h3>Rs.220</h3>
+            </div>
+            <div class="special-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/Briyani.jpg ">
+                <h2>Mutton Briyani</h2>
+                <h3>Rs.280</h3>
+            </div>
+            <div class="special-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/Fish.jpg" >
+                <h2>Fish Fry</h2>
+                <h3>Rs.150</h3>
+            </div>
+        </div>
+    </section>
+    <script>
+        
+    function hamburger(){
+        const globalMenu = document.getElementById('globalMenu');
+        const btn = document.getElementById('btn');
+        const cancel = document.getElementById('cancel');
+        const check = document.getElementById('check');
+
+            btn.addEventListener('click',()=>{
+                btn.style.display = 'none';
+                cancel.style.display = 'block';
+                globalMenu.style.display = 'block';
+            });
+            cancel.addEventListener('click',()=>{
+                 cancel.style.display = 'none';
+                btn.style.display = 'block';
+                globalMenu.style.display = 'none';
+            })
+    }
+    hamburger();
+    </script>
+</body>
+</html>

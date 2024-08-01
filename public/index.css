@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scrollbar-width: none;
+    
+}
+:root{
+    --FONTCOLOR:orange;
+}
+body{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("./Contact_coffee-shop-indoors-cafe-restaurant.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgba(12,11, 9, 0.6);
+    color:white;
+    padding:10px;
+}
+nav .logo h1{
+    text-transform: uppercase;
+    margin-left: 2rem;
+    font-size:25px;
+    color: var(--FONTCOLOR);
+}
+nav .logo h1 span{
+    color:white;
+    font-family: "Playwrite GB S", cursive;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 500;
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    background-color: var(--FONTCOLOR);
+    height: 3px;
+    left: 0px;
+    width:100%;
+    position: absolute; 
+    bottom:12px;
+    box-shadow: 2px 2px 8px var(--FONTCOLOR);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scale(0);
+    transition:transform 0.4s;
+}
+nav ul li a:hover::after{
+    transform: scale(1);
+    transform-origin: left;
+}
+.banner h2 span::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-left: 2px var(--FONTCOLOR);
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:80vh;
+    margin-top: -50px;
+}
+.banner h2{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid var(--FONTCOLOR);
+    padding: 20px;
+    font-size: 30px;
+}
+.banner h2 span{
+    color:orange;
+}
+.banner h3{
+    color: white;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Playwrite GB S", cursive;
+}
+.special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    animation: special;
+    animation-duration: 3s;
+    flex-wrap: wrap;
+}
+@keyframes special {
+    from{
+        transform: translateY(80px);
+        opacity: 0;
+    }
+}
+.special .special-box{
+    height:250px;
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    background-color: white;
+    margin-top: -150px;
+    margin-bottom: 2rem;
+    border: 2px solid var(--FONTCOLOR);
+    background:rgba(0,0,0,0.6);
+
+}
+.special-box img{
+    margin-top: 20px;
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid rgb(255, 166, 0);
+}
+.special-box h2{
+    color:var(--FONTCOLOR);
+    font-size: 15px;
+    font-weight: 400;
+    padding:5px;
+    text-transform: capitalize;
+}
+.special-box h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding:5px;
+    margin-bottom: 8px;
+}
+#todayspecial{
+    background:linear-gradient(to right,var(--FONTCOLOR),transparent);
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    animation: todaySpecial;
+    cursor:default;
+    animation-duration: 6s;
+}
+@keyframes todaySpecial {
+    0% {
+        background-color: rgba(0, 0, 0, 0); /* Start with transparent background */
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0); /* Stay transparent for first half of animation */
+    }
+    100% {
+        background:linear-gradient(to right,var(--FONTCOLOR),transparent); /* End with specified background color */
+    }
+}
+
+
+.hamburger{
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:770px) {
+       #globalMenu{
+        display: none;
+        height:78px;        
+       }
+       
+       .logo{
+        display: flex;
+        justify-content: flex-end;
+        margin-right:20px;
+       }
+       .banner{
+        width:80%;
+       }
+       .outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       #btn,#cancel{
+        color:white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        float: left;
+       /*  display: none; */
+        position:fixed;
+        top:33px;
+    }
+    .hamburger{
+        display: block;
+    }
+    label #btn{
+        display: block;
+        z-index: 11;
+    }
+      #globalMenu ul{
+        position:fixed;
+        width: 50%;
+        height: 100vh;
+        background: rgba(12,11,9,0.8);
+        top:98px;
+        left: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* display: none; */
+        z-index: 111;
+    }
+    #globalMenu ul li{
+        margin:5px 0;
+        line-height: 30px;
+    }   
+    .special .special-box{
+        width: 150px;
+        height:220px;
+    }
+    .special .special-box img{
+        width:100px;
+        height:100px;
+    }
+    label #cancel{
+        z-index: 12;
+        display: none;
+    }
+    .special{
+        row-gap: 10rem;
+    }
+    #globalMenu ul li a::after{
+        bottom:10px;
+    }
+    
+}

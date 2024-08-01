@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <link rel="stylesheet" href="./public//style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('./public/cake_background.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header h1{
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- cart section -->
+     <script defer src="./public/script.js"></script>
+    
+    <section class="food">
+        <header>
+                        <!-- ------Hamburger--for --mobile view------ -->
+
+                        <nav class="hamburger">
+                            <input type="checkbox" id="check" />
+                            <label for="check">
+                                <i class="fa fa-bars" id="btn"></i>
+                                <i class="fa fa-times" id="cancel"></i>
+                            </label>
+                        </nav>
+            
+
+            <h1>Cakes</h1>
+   
+            <nav id="globalMenu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./veg.html">Veg</a></li>
+                    <li><a href="./non_veg.html">Non-Veg</a></li>
+                    <li><a href="./iceCream.html">IceCream</a></li>
+                    <li><a href="./milkshakes.html">Milkshakes</a></li>
+                    <li><a href="./juices.html">Juices</a></li>
+                    <li><a href="#">Cakes</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <button class="btn-cart" id="cart-icon">Cart<i class="fa fa-shopping-cart"></i></button>
+                    <div class="cart-count">0</div>
+                    </ul>
+            </nav>
+            <!-- ************cartSection************ -->
+
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+
+
+
+
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+        </header>
+        <div class="container">
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/vennila-troufle.jpg">
+                <h2 class="food-title">vennila troufle</h2>
+                <h3 class="food-price">Rs.65</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+                <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/blackforest_cake.jpg" loading="lazy">
+                <h2 class="food-title">blackforest</h2>
+                <h3 class="food-price">Rs.70</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/cheese_whiteForst_cake.jpg" loading="lazy">
+                <h2 class="food-title">cheese whiteForst</h2>
+                <h3 class="food-price">Rs.90</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+           
+            </div>
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/zebraForest_cake.jpg" loading="lazy">
+            <h2 class="food-title">zebraForest</h2>
+            <h3 class="food-price">Rs.80</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/chocoTruffle_cake.jpeg" loading="lazy">
+            <h2 class="food-title">chocoTruffle</h2>
+            <h3 class="food-price">Rs.75</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/redVelvet_cake.jpg" loading="lazy">
+            <h2 class="food-title">redVelvet</h2>
+            <h3 class="food-price">Rs.65</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/brwnie.jpg" loading="lazy">
+            <h2 class="food-title">browine</h2>
+            <h3 class="food-price">Rs.60</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/brownie_with_icecream.jpg" loading="lazy">
+            <h2 class="food-title">brownie with icecream</h2>
+            <h3 class="food-price">Rs.85</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/cheese_cake.jpg" loading="lazy">
+            <h2 class="food-title">cheese cake</h2>
+            <h3 class="food-price">Rs.55</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/Walnut_cake.jpg" loading="lazy">
+            <h2 class="food-title">Walnut</h2>
+            <h3 class="food-price">Rs.45</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/choco-Smash_cake.jpg" loading="lazy">
+            <h2 class="food-title">choco-Smash</h2>
+            <h3 class="food-price">Rs.65</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        </div>
+    </section>
+    <!-- cart section -->
+    <script src="../controller/script.js"></script>
+    
+</body>
+</html>

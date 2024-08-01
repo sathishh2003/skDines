@@ -1,0 +1,142 @@
+:root{
+    --FONTCOLOR:orange;
+}
+/*------------------contact------------*/
+.footer{
+    position: relative;
+    height:40px;
+    bottom:0;
+    width:100%;
+    background-color: rgba(12,11,9,0.6);
+    border-top:2px solid var(--FONTCOLOR);
+    text-align: center;
+    color:white;
+    font-size: 14px;
+}
+.footer h4{
+    margin-top: 8px;
+}
+.footer i,.footer .ncolor{
+    color:var(--FONTCOLOR);
+}
+.contanier{
+    display: flex;
+    column-gap: 2rem;
+   }
+   main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .info{
+       display: grid;
+       gap: 2rem;
+   }
+   .infoInput{
+       display: grid;
+       border:2px solid var(--FONTCOLOR);
+       padding:2rem;
+       transition: 1s;
+       animation: left;
+       animation-duration: 1s;
+   }
+   .infoBox{
+       border:2px solid var(--FONTCOLOR);
+       padding: 20px;
+       font-size: 16px;
+       transition: 1s;
+       animation: right;
+       animation-duration: 1s;
+   }
+   @keyframes left {
+           from{
+               transform: translateX(50px);
+               color: transparent;
+               border: none;
+               background-color: transparent;
+           }
+   }
+   @keyframes right {
+           from{
+               transform: translateX(-50px);
+               color: transparent;
+               border: none;
+               background-color: transparent;
+           }
+   }
+   .infoBox:hover{
+           transform: scale(1.1);
+           transition: 1s;
+           backdrop-filter: blur(15px);
+       
+   }
+   .infoInput:hover{
+       backdrop-filter: blur(15px);
+       transition: 1s;
+   }
+   h5{
+       margin-top: 10px;
+       margin-left: 2rem;
+   }
+   h2{
+       color:var(--FONTCOLOR);
+   }
+   button{
+       height: 35px;
+       background-color: var(--FONTCOLOR);
+       color:white;
+       font-weight: 600;
+       font-size: 17px;
+       text-transform: uppercase;
+       letter-spacing: 3px;
+       border: 2px solid var(--FONTCOLOR);
+       border-radius: 3px;
+   }
+   .infoBox{
+    border:2px solid var(--FONTCOLOR);
+   }
+   input{
+       height:35px;
+       padding-left: 1rem;
+   }
+   textarea{
+       padding-left: 1rem;
+       padding-top: 0.5rem;
+       resize: none;
+   }
+   button:hover{
+     /*   background-color: rgb(248, 191, 86); */
+     border: 2px solid var(--TEXTCOLOR);
+       color:black;
+   }
+   .infoBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+   .infoBox h2{
+    color:var(--FONTCOLOR);
+   }
+   .infoBox i{
+    font-size: 25px;
+   }
+   .infoBox h5,.infoBox i{
+    color:white;
+   }
+   button:active{
+       background: black;
+       border-color: var(--TEXTCOLOR2);
+       color:var(--TEXTCOLOR2);
+   }
+   @media (max-width:800px){    
+       .contanier{
+           display: flex;
+           flex-direction: column;
+           margin-top:5rem;
+       }
+       .infoInput{
+           margin: 2rem 0px;
+       }
+   }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Foods</title>
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script defer src="./public/script.js"></script>
+    <section class="food">              
+        <header>
+            
+                        <!-- ------Hamburger--for --mobile view------ -->
+
+                        <nav class="hamburger">
+                            <input type="checkbox" id="check">
+                            <label for="check">
+                                <i class="fa fa-bars" id="btn"></i>
+                                <i class="fa fa-times" id="cancel"></i>
+                            </label>
+                        </nav>
+            
+
+            <h1>Vegeratian Foods</h1>
+   
+            <nav id="globalMenu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Veg</a></li>
+                    <li><a href="./non_veg.html">Non-Veg</a></li>
+                    <li><a href="./iceCream.html">IceCream</a></li>
+                    <li><a href="./milkshakes.html">Milkshakes</a></li>
+                    <li><a href="./juices.html">Juices</a></li>
+                    <li><a href="./cakes.html">Cakes</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <button class="btn-cart" id="cart-icon">Cart<i class="fa fa-shopping-cart"></i></button>
+                    <div class="cart-count">0</div>
+                    </ul>
+            </nav>
+            <!-- ************cartSection************ -->
+
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0</div>
+                </div>
+                <button class="btn-buy">Place Order</button>
+                <i class="fa fa-close" id="cart-close"></i>
+            </div>
+
+        </header>
+        <div class="container">
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/veg-fried-rice-" loading="lazy">
+                <h2 class="food-title">fried rice</h2>
+                <h3 class="food-price">Rs.90</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+
+                <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/panner-Masala.jpg" loading="lazy">
+                <h2 class="food-title">Panner Masala</h2>
+                <h3 class="food-price">Rs.200</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+            </div>
+            
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+                <img src="./public/dosa.jpg" loading="lazy">
+                <h2 class="food-title">Dosa</h2>
+                <h3 class="food-price">Rs.60</h3>
+                <button class="add-cart">
+                    Add to cart
+                </button>
+           
+            </div>
+            <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/noodles.jpg" loading="lazy">
+            <h2 class="food-title">Veg Noodles</h2>
+            <h3 class="food-price">Rs.90</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/manchurian.jpg" loading="lazy">
+            <h2 class="food-title">Manchurian</h2>
+            <h3 class="food-price">Rs.220</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/paneer fried.jpg" loading="lazy">
+            <h2 class="food-title">Panner Tika</h2>
+            <h3 class="food-price">Rs.230</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/ground nut curry.jpg" loading="lazy">
+            <h2 class="food-title">Masala Curry</h2>
+            <h3 class="food-price">Rs.80</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/sambar rice.jpg" loading="lazy">
+            <h2 class="food-title">Sambar Rice</h2>
+            <h3 class="food-price">Rs.75</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/full meals.jpg" loading="lazy">
+            <h2 class="food-title">Meals</h2>
+            <h3 class="food-price">Rs.140</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/Indian thali.jpg" loading="lazy">
+            <h2 class="food-title">Indian Veg Thali</h2>
+            <h3 class="food-price">Rs.450</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/veg burger.jpg" loading="lazy">
+            <h2 class="food-title">Veg Burger</h2>
+            <h3 class="food-price">Rs.110</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/veg pizza.jpg" loading="lazy">
+            <h2 class="food-title">Cheese Burst Pizza</h2>
+            <h3 class="food-price">Rs.190</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/curd-rice-.jpg" loading="lazy">
+            <h2 class="food-title">Curd Rice</h2>
+            <h3 class="food-price">Rs.65</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/Veg_indian_taco's.jpg" loading="lazy">
+            <h2 class="food-title">Veg Indian Taco's</h2>
+            <h3 class="food-price">Rs.170</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/porata.jpg" loading="lazy">
+            <h2 class="food-title">Porta</h2>
+            <h3 class="food-price">Rs.70</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+       
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/chilli-porata.jpg" loading="lazy">
+            <h2 class="food-title">Chilli Porta</h2>
+            <h3 class="food-price">Rs.130</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+       
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/cholle-boori.jpeg" loading="lazy">
+            <h2 class="food-title">Boori</h2>
+            <h3 class="food-price">Rs.55</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        <div class="food-box" data-aos="fade-down" data-aos-duration="2000">
+            <img src="./public/Momo's.jpg" loading="lazy">
+            <h2 class="food-title">Veg Momo's</h2>
+            <h3 class="food-price">Rs.120</h3>
+            <button class="add-cart">
+                Add to cart
+            </button>
+        </div>
+        </div>
+    </section>
+    <!-- cart section -->
+    <script>
+        
+        function hamburger(){
+            const globalMenu = document.getElementById('globalMenu');
+            const btn = document.getElementById('btn');
+            const cancel = document.getElementById('cancel');
+            const check = document.getElementById('check');
+    
+                btn.addEventListener('click',()=>{
+                    btn.style.display = 'none';
+                    cancel.style.display = 'block';
+                    globalMenu.style.display = 'block';
+                });
+                cancel.addEventListener('click',()=>{
+                     cancel.style.display = 'none';
+                    btn.style.display = 'block';
+                    globalMenu.style.display = 'none';
+                })
+        }
+        AOS.init();
+
+window.addEventListener("scroll",()=>{
+    if(globalMenu.style.display === "block"){
+        globalMenu.style.display = "none";
+        btn.style.display = "block";
+        cancel.style.display = "none";
+    }
+});
+
+        hamburger();
+        </script>
+
+</body>
+</html>
