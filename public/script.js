@@ -6,6 +6,7 @@ window.addEventListener("scroll",()=>{
         btn.style.display = "block";
         cancel.style.display = "none";
     }
+    
 });
 
 document.addEventListener('DOMContentLoaded', function() {
